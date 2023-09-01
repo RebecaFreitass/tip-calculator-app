@@ -15,28 +15,42 @@
   </style>
 </head>
 <body>
-<main>
-  <input type="number" placeholder="$">
-  </input>
-    Select Tip %
-    5%
-    10%
-    15%
-    25%
-    50%
-    Custom
-  
-    Number of People
-  
-    Tip Amount
-    / person
-  
-    Total
-    / person
-  
-    Reset
-  
-</main>
+  <main>
+    <section class="input-data">
+      <div class="bill-container">
+        <span class="span-description">Bill</span>
+        <input type="number" name="" id="bill" placeholder="$">
+      </div>
+      <div>
+        <span class="span-description">Select Tip %</span>
+        <div class="tip-btn-container">
+          <button class="btn-tip">5%</button>
+          <button class="btn-tip">10%</button>
+          <button class="btn-tip">15%</button>
+          <button class="btn-tip">25%</butn>
+          <button class="btn-tip">50%</button>
+          <button id="btn-custom-calc">Custom</button>
+        </div>
+      </div>
+       <div class="number-of-people-container">
+          <span class="span-description">Number Of People</span>
+          <input type="number" name="" id="divisor-input" placeholder=""><img src="images/icon-person.svg" alt="">
+       </div>
+    </section>
+    <section class="out-data">
+        <div class="total-container">
+          <p class="total-calc">Tip Amount</p>
+          <span class="per-person">/ person</span>
+          <span id="out-data-tip">0</span>
+        </div>
+        <div class="total-container">
+          <p class="total-calc">Total</p>
+          <span class="per-person">/ person</span>
+          <span id="out-data-total-per-person">0</span>
+        </div>
+        <button id="reset-data">Reset</button>
+    </section>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
