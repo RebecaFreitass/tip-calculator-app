@@ -26,6 +26,35 @@ main{
     margin-top: 7rem;
     background-color: white;
     display: flex;
-    gap: 2rem ;
+    gap: 2rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.bill-container{
+    display: flex;
+    flex-direction: column;
+}
+.span-description{
+    color: var(--Grayish-cyan);
+}
+#bill-input, #divisor-input{
+    background-color: var(--Very-light-grayish-cyan);
+    border: none;
+    padding: 0.3rem 0rem;
+    border-radius: 0.2rem;
+
+
+}
+.tip-btn-container{
+    display: flex;
+    gap:0.5rem;
+    flex-wrap: wrap;
+}
+.btn-tip{
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--Very-dark-cyan);
+    color: white;
+    font-family:"spacemono";
 }
 
